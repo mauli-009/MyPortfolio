@@ -191,7 +191,9 @@ nav ul li a:hover::after {
 
 .avatar {
     width: 400px;
+    bottom: 314px;
     height: 400px;
+    right: 78px;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     background: linear-gradient(45deg, var(--primary), var(--secondary));
     position: relative;
@@ -199,6 +201,7 @@ nav ul li a:hover::after {
     animation: morph 8s ease-in-out infinite;
     background-size: cover;
     background-position: center;
+    opacity: .3;
 }
 
 .glow {
