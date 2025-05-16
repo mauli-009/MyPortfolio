@@ -14,6 +14,15 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+header.scrolled {
+  box-shadow: 0 5px 15px rgba(0, 255, 157, 0.2); /* brighter, soft green glow */
+}
+.hamburger span {
+  transform-origin: center;
+}
 
 body {
     background-color: var(--dark);
@@ -580,6 +589,14 @@ footer {
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     }
 }
+@media (max-width: 576px) {
+  .avatar {
+    width: 180px;
+    height: 180px;
+    animation: morph 12s ease-in-out infinite; /* slower for smoother look */
+  }
+}
+
 
 @keyframes pulse {
     0% {
