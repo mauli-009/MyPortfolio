@@ -354,7 +354,12 @@ nav ul li a:hover::after {
 .skill-category:hover {
     transform: translateY(-10px);
 }
-
+.skill-items span:hover{
+    background-color: #3d3d3d;
+    color: #00ff9d;
+    cursor: pointer;
+    
+}
 .skill-category h3 {
     font-size: 1.3rem;
     margin-bottom: 20px;
