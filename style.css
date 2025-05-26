@@ -461,7 +461,10 @@ nav ul li a:hover::after {
     border-radius: 15px;
     color: var(--primary);
 }
-
+.tech-used span:hover{
+    background-color: #00ff9d;
+    color: black;
+}
 /* Contact Section */
 .contact {
     padding: 100px 0;
