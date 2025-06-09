@@ -15,7 +15,6 @@ export const projectsData = [
         link: "https://github.com/mauli-009/Unity-Error-Handling"
     },
 
-
     {
 
 
