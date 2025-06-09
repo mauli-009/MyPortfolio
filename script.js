@@ -1,3 +1,51 @@
+import { skillsData } from './data/skills.js';
+import { projectsData } from './data/projects.js';
+
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  const skillsContainer = document.querySelector('.skills-grid');
+  if (skillsContainer && skillsData) {
+    skillsContainer.innerHTML = '';
+    skillsData.forEach(skill => {
+      const div = document.createElement('div');
+      div.className = 'skill-category';
+      div.innerHTML = `
+        <h3>${skill.category}</h3>
+        <div class="skill-items">
+          ${skill.items.map(item => `<span>${item}</span>`).join('')}
+        </div>
+      `;
+      skillsContainer.appendChild(div);
+    });
+  }
+
+  // Populate Projects
+  const projectContainer = document.querySelector('.projects-grid');
+  if (projectContainer && projectsData) {
+    projectContainer.innerHTML = '';
+    projectsData.forEach(project => {
+      const div = document.createElement('div');
+      div.className = 'project-card';
+      div.innerHTML = `
+        <div class="project-image" style="background-image: url('${project.image}');">
+          <div class="overlay"></div>
+        </div>
+        <div class="project-content">
+          <h3>${project.title}</h3>
+          <p>${project.description}</p>
+          <div class="tech-used">
+            ${project.tech.map(tech => `<span>${tech}</span>`).join('')}
+          </div>
+          <a href="${project.link}" class="btn secondary" target="_blank">View Project</a>
+        </div>
+      `;
+      projectContainer.appendChild(div);
+    });
+  }
+});
+
+
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu toggle
     const hamburger = document.querySelector('.hamburger');
