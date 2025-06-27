@@ -32,9 +32,5 @@ export const projectsData = [
         link: "https://mauli009.netlify.app/"
     },
 
-  
-
-
-
 
 ];
