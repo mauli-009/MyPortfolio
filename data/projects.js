@@ -23,7 +23,7 @@ export const projectsData = [
     },
 
     {
-
+        
 
         title: "Personal Portfolio",
         image: "assets/portfolio.png",
