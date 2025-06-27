@@ -14,6 +14,13 @@ export const projectsData = [
         tech: ["Next Js", "Express", "Node Js", "AI Integration", "Lex Analyzer"],
         link: "https://github.com/mauli-009/Unity-Error-Handling"
     },
+      {
+        title: "Fullstack Blog Website",
+        image: "/assets/blog.jpg",
+        description: "Developed a modern blog platform with secure authentication, post creation, and real-time updates using Appwrite as the backend and React on the frontend.",
+        tech: ["React", "Tailwind CSS", "Appwrite", "Redux Toolkit", "JWT"],
+        link: "https://github.com/mauli-009/Blogit",
+    },
 
     {
 
@@ -25,12 +32,9 @@ export const projectsData = [
         link: "https://mauli009.netlify.app/"
     },
 
-    {
-        title: "Data Science and ML Dataset Analysis",
-        image: "assets/python.jpg",
-        description: "Performed data preprocessing and exploratory analysis...",
-        tech: ["Python", "Pandas", "scikit-learn", "Matplotlib"],
-        link: "https://github.com/mauli-009/project-on-data-visualiztaion-and-linear-regression"
-    },
+  
+
+
+
 
 ];
